@@ -1,0 +1,14 @@
+#HOME PAGE
+home_page:
+  path: /
+  defaults: {_controller: AppBundle:Home:HomePage}
+#LANGUAGE CHOOSE
+lang:
+  path: /{lang}
+  defaults: {_controller: AppBundle:Language:getLanguage, lang: en}
+  requirements:
+    lang: en|ru|he
+#ABOUT PAGE
+about_page:
+  path: /about
+  defaults: {_controller: AppBundle:About:showAboutPage }
